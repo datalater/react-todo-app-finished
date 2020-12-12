@@ -159,13 +159,13 @@ Eventually we'll want to be able to modify the data, which will only happen if w
 1번: 
 
 ```js
-onchnage={handleChange(id)}
+onChange={handleChange(id)}
 ```
 
 2번:
 
 ```js
-onchnage={() => handleChange(id)}
+onChange={() => handleChange(id)}
 ```
 
 2번이 맞다. 왜냐하면 1번은 함수를 호출한 것이지 함수 자체를 전달한 게 아니기 때문이다. 따라서 인자를 받아서 처리해야 하는 함수를 전달해야 하는 경우에는 함수 호출문을 arrow function으로 감싸주면 함수 자체를 전달할 수 있다.
